@@ -20,7 +20,7 @@ public class NQueen {
     // Method to check if a queen can be placed safely at board[row][col]
     static boolean isSafe(int row, int col) {
         try {
-            Thread.sleep(200); // Delay for visualization (optional)
+            Thread.sleep(20); // Delay for visualization (optional)
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -73,8 +73,8 @@ public class NQueen {
     // Method to initialize Swing components and display the chessboard
     NQueen() {
         JFrame frame = new JFrame("N Queen Problem Visualizer"); // Create a new JFrame
-        frame.setLayout(new GridLayout(N, N)); // Set layout to grid layout of size N x N
-        frame.setSize(400, 400); // Set frame size
+        frame.setLayout(new GridLayout(N, N)); //   Set layout to grid layout of size N x N
+        frame.setSize(400, 400); // Set frame size  
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // Set default close operation
 
         // Initialize JLabels for each cell in the grid
